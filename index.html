@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>upload file for image son</title>
+
+	<meta charset="utf-8">
+</head>
+<body>
+</body>
+
+<h1>upload File for image son</h1>
+<form method="post" action="reception.php" enctype="multipart/form-data">
+     <label for="image">Image (JPG, PNG | max. 150 Ko) :</label><br />
+     <input type="hidden" name="MAX_FILE_SIZE" value="20485760" />
+     <input type="file" name="image" id="image" /><br />
+
+     <label for="son">son reprsentant l'image| max. 1 Mo) :</label><br />
+     <input type="hidden" name="MAX_FILE_SIZE" value="10485760" />
+     <input type="file" name="son" id="son" /><br />
+     
+     <label for="titre">Nom de ce que represente l'image:</label><br />
+     <input type="text" name="titre" value="Titre du fichier" id="titre" /><br />
+     
+     <input type="submit" name="submit" value="Envoyer" />
+</form>
+
+</html>
